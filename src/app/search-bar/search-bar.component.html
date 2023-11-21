@@ -1,0 +1,16 @@
+<form class="ui form" (submit)="onformSubmit($event)">
+  <div class="ui input" style="width: 100rem; margin: 0 auto">
+    <input
+      type="text"
+      #input
+      (input)="term = input.value"
+      placeholder="Search......"
+    />
+  </div>
+  <i class="in flag " ></i>
+  <!--<div>
+    <button class="ui primary button" (click)="onformSubmit($event)">
+      Save
+    </button>
+  </div>-->
+</form>

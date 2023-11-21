@@ -1,0 +1,25 @@
+<table class="ui selectable inverted table ui selectable celled table ui blue table">
+    <thead>
+        <tr>
+            <th> Title</th>
+            <th> Word count</th>
+            <th> Describe</th>
+
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let p of pageAria">
+        <td >{{p.title}} </td>
+        <td >{{p.wordcount}}</td>
+        <!--<td >{{p.snippet}}</td>-->
+        <td [innerHTML]="p.snippet"></td>
+
+
+    </tr>
+
+</tbody>    
+</table>
+
+<!--<div>
+    {{pageAria}}
+</div>-->
